@@ -39,5 +39,11 @@ namespace GroupProjectFlight2026
             AddCust addCust = new AddCust();
             addCust.Show();
         }
+
+        private void btnAddZip_Click(object sender, EventArgs e)
+        {
+            AddZip addZip = new AddZip();
+            addZip.Show();
+        }
     }
 }

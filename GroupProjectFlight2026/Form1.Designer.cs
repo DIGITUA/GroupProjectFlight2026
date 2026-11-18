@@ -35,6 +35,7 @@
             this.dataSet1 = new GroupProjectFlight2026.DataSet1();
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnAddCust = new System.Windows.Forms.Button();
+            this.btnAddZip = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -92,11 +93,22 @@
             this.btnAddCust.UseVisualStyleBackColor = true;
             this.btnAddCust.Click += new System.EventHandler(this.btnAddCust_Click);
             // 
+            // btnAddZip
+            // 
+            this.btnAddZip.Location = new System.Drawing.Point(608, 9);
+            this.btnAddZip.Name = "btnAddZip";
+            this.btnAddZip.Size = new System.Drawing.Size(156, 40);
+            this.btnAddZip.TabIndex = 4;
+            this.btnAddZip.Text = "Update Zip Code";
+            this.btnAddZip.UseVisualStyleBackColor = true;
+            this.btnAddZip.Click += new System.EventHandler(this.btnAddZip_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.btnAddZip);
             this.Controls.Add(this.btnAddCust);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -118,6 +130,7 @@
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
         private System.Windows.Forms.Button btnAddCust;
+        private System.Windows.Forms.Button btnAddZip;
     }
 }
 

@@ -35,5 +35,12 @@ namespace GroupProjectFlight2026
             jobs.Show();
             this.Hide();
         }
+
+        private void btnAddCust_Click(object sender, EventArgs e)
+        {
+            AddCust addCust = new AddCust();
+            addCust.Show();
+            this.Hide();
+        }
     }
 }

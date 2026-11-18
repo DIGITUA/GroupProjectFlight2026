@@ -26,21 +26,18 @@ namespace GroupProjectFlight2026
         {
             ShowEmp employeeForm = new ShowEmp();
             employeeForm.Show();
-            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Jobs jobs = new Jobs();
             jobs.Show();
-            this.Hide();
         }
 
         private void btnAddCust_Click(object sender, EventArgs e)
         {
             AddCust addCust = new AddCust();
             addCust.Show();
-            this.Hide();
         }
     }
 }

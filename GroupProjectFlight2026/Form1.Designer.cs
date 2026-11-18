@@ -84,9 +84,9 @@
             // 
             // btnAddCust
             // 
-            this.btnAddCust.Location = new System.Drawing.Point(427, 9);
+            this.btnAddCust.Location = new System.Drawing.Point(417, 9);
             this.btnAddCust.Name = "btnAddCust";
-            this.btnAddCust.Size = new System.Drawing.Size(144, 40);
+            this.btnAddCust.Size = new System.Drawing.Size(164, 40);
             this.btnAddCust.TabIndex = 3;
             this.btnAddCust.Text = "Update Customer";
             this.btnAddCust.UseVisualStyleBackColor = true;

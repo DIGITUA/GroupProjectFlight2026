@@ -81,6 +81,9 @@
     <Compile Include="ShowEmp.Designer.cs">
       <DependentUpon>ShowEmp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCust.resx">
+      <DependentUpon>AddCust.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -24,7 +24,8 @@ namespace GroupProjectFlight2026
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form1 jobs = new Form1();
+            jobs.Show();
         }
 
         private void ShowEmp_Load(object sender, EventArgs e)

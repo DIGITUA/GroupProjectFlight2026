@@ -56,6 +56,12 @@
     <Compile Include="AddCust.Designer.cs">
       <DependentUpon>AddCust.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddZip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddZip.Designer.cs">
+      <DependentUpon>AddZip.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -83,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="AddCust.resx">
       <DependentUpon>AddCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddZip.resx">
+      <DependentUpon>AddZip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

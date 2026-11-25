@@ -51,5 +51,11 @@ namespace GroupProjectFlight2026
             AddAirplane airplaneForm = new AddAirplane();
             airplaneForm.Show();
         }
+
+        private void btnAddAirport_Click(object sender, EventArgs e)
+        {
+            AddAirport airportForm = new AddAirport();
+            airportForm.Show();
+        }
     }
 }

@@ -37,6 +37,7 @@
             this.btnAddCust = new System.Windows.Forms.Button();
             this.btnAddZip = new System.Windows.Forms.Button();
             this.btnAddAirplane = new System.Windows.Forms.Button();
+            this.btnAddAirport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -108,7 +109,7 @@
             // 
             // btnAddAirplane
             // 
-            this.btnAddAirplane.Location = new System.Drawing.Point(405, 70);
+            this.btnAddAirplane.Location = new System.Drawing.Point(278, 72);
             this.btnAddAirplane.Name = "btnAddAirplane";
             this.btnAddAirplane.Size = new System.Drawing.Size(137, 23);
             this.btnAddAirplane.TabIndex = 5;
@@ -116,11 +117,23 @@
             this.btnAddAirplane.UseVisualStyleBackColor = true;
             this.btnAddAirplane.Click += new System.EventHandler(this.btnAddAirplane_Click);
             // 
+            // btnAddAirport
+            // 
+            this.btnAddAirport.AutoSize = true;
+            this.btnAddAirport.Location = new System.Drawing.Point(431, 72);
+            this.btnAddAirport.Name = "btnAddAirport";
+            this.btnAddAirport.Size = new System.Drawing.Size(146, 23);
+            this.btnAddAirport.TabIndex = 6;
+            this.btnAddAirport.Text = "Add/Update Airport";
+            this.btnAddAirport.UseVisualStyleBackColor = true;
+            this.btnAddAirport.Click += new System.EventHandler(this.btnAddAirport_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 365);
+            this.Controls.Add(this.btnAddAirport);
             this.Controls.Add(this.btnAddAirplane);
             this.Controls.Add(this.btnAddZip);
             this.Controls.Add(this.btnAddCust);
@@ -133,6 +146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -146,6 +160,7 @@
         private System.Windows.Forms.Button btnAddCust;
         private System.Windows.Forms.Button btnAddZip;
         private System.Windows.Forms.Button btnAddAirplane;
+        private System.Windows.Forms.Button btnAddAirport;
     }
 }
 

@@ -37,16 +37,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(151, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(118, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(583, 314);
+            this.dataGridView1.Size = new System.Drawing.Size(649, 314);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(151, 422);
+            this.btnSubmit.Location = new System.Drawing.Point(385, 422);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(90, 41);
+            this.btnSubmit.Size = new System.Drawing.Size(115, 41);
             this.btnSubmit.TabIndex = 1;
             this.btnSubmit.Text = "Save Changes";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -54,25 +54,25 @@
             // 
             // txtErrorMsg
             // 
-            this.txtErrorMsg.Location = new System.Drawing.Point(151, 481);
+            this.txtErrorMsg.Location = new System.Drawing.Point(339, 381);
             this.txtErrorMsg.Multiline = true;
             this.txtErrorMsg.Name = "txtErrorMsg";
             this.txtErrorMsg.ReadOnly = true;
             this.txtErrorMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtErrorMsg.Size = new System.Drawing.Size(147, 20);
+            this.txtErrorMsg.Size = new System.Drawing.Size(207, 20);
             this.txtErrorMsg.TabIndex = 2;
             // 
             // AddAirplane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.ClientSize = new System.Drawing.Size(884, 581);
             this.Controls.Add(this.txtErrorMsg);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.dataGridView1);
             this.Name = "AddAirplane";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add pr Update Airplane";
+            this.Text = "Add or Update Airplane";
             this.Load += new System.EventHandler(this.AddAirplane_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

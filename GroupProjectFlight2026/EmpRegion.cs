@@ -70,5 +70,59 @@ namespace GroupProjectFlight2026
                 lstDisplay.Items.Add(ex.Message);
             }
         }
+
+        private void btnState_Click(object sender, EventArgs e)
+        {
+            lstDisplay.Items.Clear();
+            string empName = null;
+            string empZip = null;
+
+            if(string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                lstDisplay.Items.Add("Enter an Employee ID");
+            }
+            else
+            {
+                try
+                {
+                    conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                    string sql = "SELECT FirstName, LastName, Zip FROM EmpPf WHERE EmpNo = '" + txtId.Text + "'";
+                    adapter = new iDB2DataAdapter(sql, conn);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+
+                    DataRow row = dataSet.Tables[0].Rows[0];
+                    empName = row[0].ToString().Trim() + " " + row[1].ToString().Trim();
+                    empZip = row[2].ToString();
+
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    lstDisplay.Items.Add(ex.Message);
+                }
+
+                try
+                {
+                    conn = new iDB2Connection("DataSource=deathstar.gtc.edu");
+                    string sql = "SELECT State FROM ZipPf WHERE Zip = '" + empZip + "'";
+                    adapter = new iDB2DataAdapter(sql, conn);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+
+                    DataRow row = dataSet.Tables[0].Rows[0];
+                    string state = row[0].ToString().Trim();
+                    conn.Close();
+
+                    lstDisplay.Items.Add(empName + " lives in " + state);
+                }
+                catch (Exception ex)
+                {
+                    lstDisplay.Items.Add(ex.Message);
+                }
+            }
+        }
     }
 }

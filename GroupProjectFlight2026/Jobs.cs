@@ -44,7 +44,7 @@ namespace GroupProjectFlight2026
 
                 // Create the SelectCommand and attach the parameter
                 iDB2Command selectCmd = new iDB2Command(sql, conn);
-                selectCmd.Parameters.Add("@FLIGHTNO", iDB2DbType.iDB2Char, 10).Value = txtFlightNo.Trim().ToUpper();
+                selectCmd.Parameters.Add("@FLIGHTNO", iDB2DbType.iDB2Char, 10).Value = txtErrorMsg.Text.Trim().ToUpper();
 
                 dataAdapter = new iDB2DataAdapter(selectCmd);
 

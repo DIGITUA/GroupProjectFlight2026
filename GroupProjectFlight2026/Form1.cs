@@ -45,5 +45,11 @@ namespace GroupProjectFlight2026
             AddZip addZip = new AddZip();
             addZip.Show();
         }
+
+        private void btnAddAirplane_Click(object sender, EventArgs e)
+        {
+            AddAirplane airplaneForm = new AddAirplane();
+            airplaneForm.Show();
+        }
     }
 }

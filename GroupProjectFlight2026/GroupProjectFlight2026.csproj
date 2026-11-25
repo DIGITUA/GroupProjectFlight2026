@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EmpRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpRegion.Designer.cs">
+      <DependentUpon>EmpRegion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddZip.resx">
       <DependentUpon>AddZip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpRegion.resx">
+      <DependentUpon>EmpRegion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -57,5 +57,11 @@ namespace GroupProjectFlight2026
             AddAirport airportForm = new AddAirport();
             airportForm.Show();
         }
+
+        private void btnEmpRegion_Click(object sender, EventArgs e)
+        {
+            EmpRegion empRegion = new EmpRegion();
+            empRegion.Show();
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.btnAddZip = new System.Windows.Forms.Button();
             this.btnAddAirplane = new System.Windows.Forms.Button();
             this.btnAddAirport = new System.Windows.Forms.Button();
+            this.btnEmpRegion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -88,7 +89,7 @@
             // btnAddCust
             // 
             this.btnAddCust.Location = new System.Drawing.Point(278, 6);
-            this.btnAddCust.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCust.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCust.Name = "btnAddCust";
             this.btnAddCust.Size = new System.Drawing.Size(109, 26);
             this.btnAddCust.TabIndex = 3;
@@ -99,7 +100,7 @@
             // btnAddZip
             // 
             this.btnAddZip.Location = new System.Drawing.Point(405, 6);
-            this.btnAddZip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddZip.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddZip.Name = "btnAddZip";
             this.btnAddZip.Size = new System.Drawing.Size(104, 26);
             this.btnAddZip.TabIndex = 4;
@@ -128,11 +129,22 @@
             this.btnAddAirport.UseVisualStyleBackColor = true;
             this.btnAddAirport.Click += new System.EventHandler(this.btnAddAirport_Click);
             // 
+            // btnEmpRegion
+            // 
+            this.btnEmpRegion.Location = new System.Drawing.Point(97, 64);
+            this.btnEmpRegion.Name = "btnEmpRegion";
+            this.btnEmpRegion.Size = new System.Drawing.Size(105, 39);
+            this.btnEmpRegion.TabIndex = 7;
+            this.btnEmpRegion.Text = "Display Employees in Region";
+            this.btnEmpRegion.UseVisualStyleBackColor = true;
+            this.btnEmpRegion.Click += new System.EventHandler(this.btnEmpRegion_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 365);
+            this.Controls.Add(this.btnEmpRegion);
             this.Controls.Add(this.btnAddAirport);
             this.Controls.Add(this.btnAddAirplane);
             this.Controls.Add(this.btnAddZip);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Button btnAddZip;
         private System.Windows.Forms.Button btnAddAirplane;
         private System.Windows.Forms.Button btnAddAirport;
+        private System.Windows.Forms.Button btnEmpRegion;
     }
 }
 

@@ -36,16 +36,17 @@
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnAddCust = new System.Windows.Forms.Button();
             this.btnAddZip = new System.Windows.Forms.Button();
+            this.btnAddAirplane = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(9, 10);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 29);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 0;
             this.button1.Text = "exit";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,10 +54,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(146, 9);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(97, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 40);
+            this.button2.Size = new System.Drawing.Size(104, 26);
             this.button2.TabIndex = 1;
             this.button2.Text = "Show all employees";
             this.button2.UseVisualStyleBackColor = true;
@@ -64,10 +65,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(324, 9);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(216, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 40);
+            this.button3.Size = new System.Drawing.Size(47, 26);
             this.button3.TabIndex = 2;
             this.button3.Text = "list jobs";
             this.button3.UseVisualStyleBackColor = true;
@@ -85,9 +86,10 @@
             // 
             // btnAddCust
             // 
-            this.btnAddCust.Location = new System.Drawing.Point(417, 9);
+            this.btnAddCust.Location = new System.Drawing.Point(278, 6);
+            this.btnAddCust.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddCust.Name = "btnAddCust";
-            this.btnAddCust.Size = new System.Drawing.Size(164, 40);
+            this.btnAddCust.Size = new System.Drawing.Size(109, 26);
             this.btnAddCust.TabIndex = 3;
             this.btnAddCust.Text = "Update Customer";
             this.btnAddCust.UseVisualStyleBackColor = true;
@@ -95,25 +97,37 @@
             // 
             // btnAddZip
             // 
-            this.btnAddZip.Location = new System.Drawing.Point(608, 9);
+            this.btnAddZip.Location = new System.Drawing.Point(405, 6);
+            this.btnAddZip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddZip.Name = "btnAddZip";
-            this.btnAddZip.Size = new System.Drawing.Size(156, 40);
+            this.btnAddZip.Size = new System.Drawing.Size(104, 26);
             this.btnAddZip.TabIndex = 4;
             this.btnAddZip.Text = "Update Zip Code";
             this.btnAddZip.UseVisualStyleBackColor = true;
             this.btnAddZip.Click += new System.EventHandler(this.btnAddZip_Click);
             // 
+            // btnAddAirplane
+            // 
+            this.btnAddAirplane.Location = new System.Drawing.Point(405, 70);
+            this.btnAddAirplane.Name = "btnAddAirplane";
+            this.btnAddAirplane.Size = new System.Drawing.Size(137, 23);
+            this.btnAddAirplane.TabIndex = 5;
+            this.btnAddAirplane.Text = "Add/Update Airplane";
+            this.btnAddAirplane.UseVisualStyleBackColor = true;
+            this.btnAddAirplane.Click += new System.EventHandler(this.btnAddAirplane_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(600, 365);
+            this.Controls.Add(this.btnAddAirplane);
             this.Controls.Add(this.btnAddZip);
             this.Controls.Add(this.btnAddCust);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
@@ -131,6 +145,7 @@
         private DataSet1 dataSet1;
         private System.Windows.Forms.Button btnAddCust;
         private System.Windows.Forms.Button btnAddZip;
+        private System.Windows.Forms.Button btnAddAirplane;
     }
 }
 

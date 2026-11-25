@@ -33,5 +33,16 @@ namespace GroupProjectFlight2026.Properties {
                 return ((string)(this["ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=IBMDA400.DataSource.1;Data Source=deathstar.gtc.edu;Password=Realm1;User" +
+            " ID=ITPA617;Initial Catalog=S101FF5C")]
+        public string IBMConnectionString {
+            get {
+                return ((string)(this["IBMConnectionString"]));
+            }
+        }
     }
 }
